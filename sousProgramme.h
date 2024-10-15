@@ -4,5 +4,10 @@
 
 #ifndef SOUSPROGRAMME_H
 #define SOUSPROGRAMME_H
+#include <iostream>
+using namespace std;
+
+//déclaration des sous programmes
+void affichage10Nombres(int nbDepart);
 
 #endif //SOUSPROGRAMME_H
