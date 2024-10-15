@@ -11,6 +11,8 @@ int main() {
     affichage10Nombres(nombreDepart);
     cout << "**************************************************\n";
     compteRebours();
+    cout << "**************************************************\n";
+    nombreAléatoire();
 
     return 0;
 }

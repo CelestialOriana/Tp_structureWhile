@@ -4,6 +4,7 @@
 
 #include "sousProgramme.h"
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 // Procédure pour afficher 10 nombres
@@ -21,5 +22,22 @@ void compteRebours() {
     while (compteur >= 0) {
         cout << compteur << endl; // Afficher le nombre
         compteur--;
+    }
+}
+void nombreAléatoire() {
+    srand(time(0));
+        cout << rand() << endl;
+    int randomNum1 = rand();
+    cout << "Premier nombre aleatoire : " << randomNum1 << endl;
+
+
+    int randomNum2 = rand();
+    cout << "Deuxieme nombre aleatoire : " << randomNum2 << endl;
+
+
+    if (randomNum1 != randomNum2) {
+        cout << "Les deux nombres sont differents." << endl;
+    } else {
+        cout << "Les deux nombres sont identiques." << endl;
     }
 }
