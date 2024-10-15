@@ -1,8 +1,5 @@
 #include "sousProgramme.h"
 
-
-void affichage10Nombres(int nbDepart);
-
 int main() {
     int nombreDepart;
 
@@ -12,6 +9,8 @@ int main() {
 
     // Appeler la fonction pour afficher les nombres
     affichage10Nombres(nombreDepart);
+    cout << "**************************************************\n";
+    compteRebours();
 
     return 0;
 }

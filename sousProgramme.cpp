@@ -16,4 +16,10 @@ void affichage10Nombres(int nbDepart) {
         compteur++;
     }
 }
-
+void compteRebours() {
+    int compteur = 5;  // Initialiser le compteur
+    while (compteur >= 0) {
+        cout << compteur << endl; // Afficher le nombre
+        compteur--;
+    }
+}
