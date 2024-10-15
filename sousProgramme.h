@@ -11,4 +11,5 @@ using namespace std;
 void affichage10Nombres(int nbDepart);
 void compteRebours ();
 void nombreAléatoire();
+void Dé();
 #endif //SOUSPROGRAMME_H

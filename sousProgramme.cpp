@@ -27,17 +27,27 @@ void compteRebours() {
 void nombreAléatoire() {
     srand(time(0));
         cout << rand() << endl;
-    int randomNum1 = rand()%100;
-    cout << "nombre aleatoire entre 0 et 99 : " << randomNum1 << endl;
+    int randomNum1 = rand() % 100; // Entre 0 et 99
+    cout << "Nombre aleatoire entre 0 et 99 : " << randomNum1 << endl;
 
+    int randomNum2;
+    do {
+        randomNum2 = rand() % 100; // Entre 0 et 99
+        cout << "Nombre aleatoire entre 0 et 99 : " << randomNum2 << endl;
+    } while (randomNum1 == randomNum2);
 
-    int randomNum2 = rand()%100 +1 ;
-    cout << "nombre aleatoire entre 1 et 100 : " << randomNum2 << endl;
+    cout << "Les deux nombres sont differents." << endl;
+}
+void Dé() {
+    int De;
+    do {
+        De = rand() % 6 + 1;
+        cout << "Resultat du de : " << De << endl;
 
-
-    if (randomNum1 != randomNum2) {
-        cout << "Les deux nombres sont differents." << endl;
-    } else {
-        cout << "Les deux nombres sont identiques." << endl;
-    }
+        if (De != 6) {
+            cout << "Dommage, relance ton de." << endl;
+        } else {
+            cout << "Bravo, vous avez obtenu un 6 !" << endl;
+        }
+    } while (De != 6);
 }
