@@ -8,8 +8,12 @@ using namespace std;
 
 // Procédure pour afficher 10 nombres
 void affichage10Nombres(int nbDepart) {
-    for (int i = 0; i < 10; i++) {  // i commence à 0 pour afficher les 10 nombres à partir de nbDepart
-        cout << nbDepart + i << endl;
+    int compteur = 1;  // Initialiser le compteur
+
+    // Utiliser une boucle while pour afficher les 10 nombres
+    while (compteur < 11) {
+        cout << nbDepart + compteur << endl; // Afficher le nombre
+        compteur++;
     }
 }
 
