@@ -27,12 +27,12 @@ void compteRebours() {
 void nombreAléatoire() {
     srand(time(0));
         cout << rand() << endl;
-    int randomNum1 = rand();
-    cout << "Premier nombre aleatoire : " << randomNum1 << endl;
+    int randomNum1 = rand()%100;
+    cout << "nombre aleatoire entre 0 et 99 : " << randomNum1 << endl;
 
 
-    int randomNum2 = rand();
-    cout << "Deuxieme nombre aleatoire : " << randomNum2 << endl;
+    int randomNum2 = rand()%100 +1 ;
+    cout << "nombre aleatoire entre 1 et 100 : " << randomNum2 << endl;
 
 
     if (randomNum1 != randomNum2) {
